@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>YSPA</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    
+    <script src="app.js"></script>
+    
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+	<h3>Playing with AnjularJS</h3>
+	<div class="navbar navbar-default">
+		<div class="btn-group" uib-dropdown>
+			<button id="button-template-url" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+				Button<span class="caret"></span>
+			</button>
+			<ul class="uib-dropdown-menu" template-url="button/buttonMenu.html" aria-labelledby="button-template-url">
+			</ul>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="well" ui-view></div>
+		</div>
+	</div>
+</body>
+</html>
