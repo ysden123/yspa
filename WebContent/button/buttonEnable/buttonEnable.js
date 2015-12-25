@@ -11,22 +11,24 @@ app.controller("ButtonEnableController", function($scope) {
 	}
 
 	$scope.changeInputState = function() {
-		if ($scope.buttonEnable.inputButtonStatus == "enabled") {
-			$scope.buttonEnable.inputButtonStatus = "disabled";
-			$scope.buttonEnable.inputButtonValue = "Enable"
+		data = $scope.buttonEnable; 
+		if (data.inputButtonStatus == "enabled") {
+			data.inputButtonStatus = "disabled";
+			data.inputButtonValue = "Enable"
 		} else {
-			$scope.buttonEnable.inputButtonStatus = "enabled";
-			$scope.buttonEnable.inputButtonValue = "Disable"
+			data.inputButtonStatus = "enabled";
+			data.inputButtonValue = "Disable"
 		}
 	}
 
 	$scope.changeRawState = function() {
-		if ($scope.buttonEnable.rawButtonStatus == "enabled") {
-			$scope.buttonEnable.rawButtonStatus = "disabled";
-			$scope.buttonEnable.rawButtonValue = "Enable"
+		data = $scope.buttonEnable; 
+		if (data.rawButtonStatus == "enabled") {
+			data.rawButtonStatus = "disabled";
+			data.rawButtonValue = "Enable"
 		} else {
-			$scope.buttonEnable.rawButtonStatus = "enabled";
-			$scope.buttonEnable.rawButtonValue = "Disable"
+			data.rawButtonStatus = "enabled";
+			data.rawButtonValue = "Disable"
 		}
 	}
 
