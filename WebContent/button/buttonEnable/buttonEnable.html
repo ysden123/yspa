@@ -1,11 +1,12 @@
 <h4>Enabling or Disabling Buttons</h4>
 <div ng-controller="ButtonEnableController">
-	<div>
-		<input type="button" ng-disabled="buttonEnable.inputButtonStatus != 'enabled'" value="Input as button {{buttonEnable.inputButtonStatus}}" ng-click="buttonWasClicked('Input button')">
+	<div class="row"  style="padding-top: 10px;">
+		<input type="button" ng-disabled="buttonEnable.inputButtonStatus != 'enabled'" value="Input as button {{buttonEnable.inputButtonStatus}}"
+			ng-click="buttonWasClicked('Input button')">
 		<button ng-click="changeInputState()">{{buttonEnable.inputButtonValue}}</button>
 	</div>
 
-	<div>
+	<div class="row"  style="padding-top: 10px;">
 		<button ng-disabled="buttonEnable.rawButtonStatus != 'enabled'" ng-click="buttonWasClicked('Raw button')">Raw button {{buttonEnable.rawButtonStatus}}</button>
 		<button ng-click="changeRawState()">{{buttonEnable.rawButtonValue}}</button>
 	</div>
